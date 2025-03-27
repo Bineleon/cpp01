@@ -6,7 +6,7 @@
 #    By: neleon <neleon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/20 11:24:02 by nelbi             #+#    #+#              #
-#    Updated: 2025/03/27 14:49:39 by neleon           ###   ########.fr        #
+#    Updated: 2025/03/27 18:40:16 by neleon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,12 +14,12 @@
 RESET				= \e[0m\033[0m
 GREEN				= \033[0;32m\e[1m
 
-NAME 				= Zombie
+NAME 				= zombieRef
 CC					= c++
 FLAGS				= -Wall -Wextra -Werror -std=c++98 -MMD -MP
 
 SRC_DIR				= .
-SRCS				= Zombie.cpp main.cpp
+SRCS				= main.cpp
 
 RM					= rm -rf
 OBJS_DIR			= ./objs/
@@ -36,7 +36,7 @@ ${OBJS_DIR}%.o: ${SRC_DIR}/%.cpp
 
 ${NAME}: ${OBJS}
 	@${CC} ${FLAGS} ${OBJS} -o ${NAME}
-	@echo "${GREEN}ex01		: DONE!${RESET}"
+	@echo "${GREEN}ex02		: DONE!${RESET}"
 
 all: ${NAME}
 
