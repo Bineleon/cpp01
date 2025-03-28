@@ -6,7 +6,7 @@
 #    By: nelbi <neleon@student.42.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/20 11:24:02 by nelbi             #+#    #+#              #
-#    Updated: 2025/03/28 15:43:37 by nelbi            ###   ########.fr        #
+#    Updated: 2025/03/28 18:25:23 by nelbi            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,12 +14,12 @@
 RESET				= \e[0m\033[0m
 GREEN				= \033[0;32m\e[1m
 
-NAME 				= weapon
+NAME 				= Harl
 CC					= c++
 FLAGS				= -Wall -Wextra -Werror -std=c++98 -MMD -MP
 
 SRC_DIR				= .
-SRCS				= main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRCS				= main.cpp Harl.cpp
 
 RM					= rm -rf
 OBJS_DIR			= ./objs/
@@ -36,7 +36,7 @@ ${OBJS_DIR}%.o: ${SRC_DIR}/%.cpp
 
 ${NAME}: ${OBJS}
 	@${CC} ${FLAGS} ${OBJS} -o ${NAME}
-	@echo "${GREEN}ex03		: DONE!${RESET}"
+	@echo "${GREEN}ex04		: DONE!${RESET}"
 
 all: ${NAME}
 
