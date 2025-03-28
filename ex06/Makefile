@@ -6,7 +6,7 @@
 #    By: nelbi <neleon@student.42.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/20 11:24:02 by nelbi             #+#    #+#              #
-#    Updated: 2025/03/28 20:01:14 by nelbi            ###   ########.fr        #
+#    Updated: 2025/03/28 20:00:56 by nelbi            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 RESET				= \e[0m\033[0m
 GREEN				= \033[0;32m\e[1m
 
-NAME 				= Harl
+NAME 				= harlFilter
 CC					= c++
 FLAGS				= -Wall -Wextra -Werror -std=c++98 -MMD -MP
 
@@ -36,7 +36,7 @@ ${OBJS_DIR}%.o: ${SRC_DIR}/%.cpp
 
 ${NAME}: ${OBJS}
 	@${CC} ${FLAGS} ${OBJS} -o ${NAME}
-	@echo "${GREEN}ex05		: DONE!${RESET}"
+	@echo "${GREEN}ex06		: DONE!${RESET}"
 
 all: ${NAME}
 
