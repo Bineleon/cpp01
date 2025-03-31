@@ -18,5 +18,9 @@ int main()
         club.setType("some other type of club");
         jim.attack();
     }
+    {
+        HumanB jim("Armless Jim");
+        jim.attack();
+    }
     return 0;
 }

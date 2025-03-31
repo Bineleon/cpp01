@@ -15,7 +15,7 @@ void HumanB::attack(void)
     if (_weapon)
         std::cout << SMBLUE << _name << " attacks with their " << _weapon->getType() << RESET << std::endl;
     else
-        std::cout << SMRED << _name << " has no weapon yet 🤷" << RESET << std::endl;
+        std::cout << SMYELLOW << _name << " has no weapon yet 🤷" << RESET << std::endl;
     return;
 }
 

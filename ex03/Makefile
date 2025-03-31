@@ -6,7 +6,7 @@
 #    By: nelbi <neleon@student.42.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/20 11:24:02 by nelbi             #+#    #+#              #
-#    Updated: 2025/03/28 20:01:55 by nelbi            ###   ########.fr        #
+#    Updated: 2025/03/31 17:11:30 by nelbi            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ GREEN				= \033[0;32m\e[1m
 
 NAME 				= weapon
 CC					= c++
-FLAGS				= -Wall -Wextra -Werror -std=c++98 -MMD -MP
+FLAGS				= -Wall -Wextra -Werror -g3 -std=c++98 -MMD -MP
 
 SRC_DIR				= .
 SRCS				= main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
