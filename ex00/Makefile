@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nelbi <neleon@student.42.fr>               +#+  +:+       +#+         #
+#    By: neleon <neleon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/20 11:24:02 by nelbi             #+#    #+#              #
-#    Updated: 2025/03/28 20:02:10 by nelbi            ###   ########.fr        #
+#    Updated: 2025/04/08 14:49:39 by neleon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ ${OBJS_DIR}%.o: ${SRC_DIR}/%.cpp
 
 ${NAME}: ${OBJS}
 	@${CC} ${FLAGS} ${OBJS} -o ${NAME}
-	@echo "${GREEN}ex01		: DONE!${RESET}"
+	@echo "${GREEN}ex00		: DONE!${RESET}"
 
 all: ${NAME}
 
