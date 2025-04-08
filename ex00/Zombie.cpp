@@ -15,3 +15,13 @@ Zombie::~Zombie()
 	std::cout << RED << _name << ": " << "DeeeeaaaaaadzzzZ..." << RESET << std::endl;
 }
 
+Zombie* newZombie( std::string name )
+{
+	Zombie*	heapZ = new Zombie(name);
+	return heapZ;
+}
+
+void randomChump( std::string name )
+{
+	Zombie stackZ = Zombie(name);
+}

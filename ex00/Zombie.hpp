@@ -14,6 +14,9 @@ class Zombie
 	std::string _name;
 };
 
+Zombie* newZombie( std::string name );
+void randomChump( std::string name );
+
 # define RESET "\033[0m"
 # define SMRED "\033[0;31m"
 # define SMGREEN "\033[0;32m"

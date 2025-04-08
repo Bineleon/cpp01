@@ -1,23 +1,21 @@
 #include "Zombie.hpp"
 
-Zombie* newZombie( std::string name )
-{
-	Zombie*	heapZ = new Zombie(name);
-	return heapZ;
-}
-
-void randomChump( std::string name )
-{
-	Zombie stackZ = Zombie(name);
-}
-
 int main (void)
 {
-	randomChump("stackZombie");
-	Zombie* newZ = newZombie("heapZombie");
+	{
+		std::cout << SMGREEN << "\nTest 1 : Stack Zombie before heap Zombie\n" << RESET << std::endl;
+		randomChump("stackZombie");
+		Zombie* newZ = newZombie("heapZombie");
 
+		delete newZ;
+	}
+	{
+		std::cout << SMGREEN << "\nTest 2 : Heap Zombie before stack Zombie\n" << RESET << std::endl;
+		Zombie* newZ = newZombie("heapZombie");
+		randomChump("stackZombie");
 
-	delete newZ;
+		delete newZ;
+	}
 
 	return (0);
 }

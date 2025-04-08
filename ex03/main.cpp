@@ -4,6 +4,8 @@
 int main()
 {
     {
+		std::cout << SMGREEN << "\nTest HumanA\n" << RESET << std::endl;
+
         Weapon club = Weapon("crude spiked club");
         HumanA bob("Bob", club);
         bob.attack();
@@ -11,6 +13,8 @@ int main()
         bob.attack();
     }
     {
+		std::cout << SMGREEN << "\nTest HumanB\n" << RESET << std::endl;
+
         Weapon club = Weapon("crude spiked club");
         HumanB jim("Jim");
         jim.setWeapon(club);
@@ -19,6 +23,8 @@ int main()
         jim.attack();
     }
     {
+		std::cout << SMGREEN << "\nTest HumanB without weapon\n" << RESET << std::endl;
+
         HumanB jim("Armless Jim");
         jim.attack();
     }

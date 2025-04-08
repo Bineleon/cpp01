@@ -4,7 +4,7 @@
 # define RESET "\033[0m"
 # define RED "\033[1;31m"
 
-void    replace(std::ifstream& myFile, std::ofstream& myReplace, std::string to_find, std::string replace)
+void    replaceFunc(std::ifstream& myFile, std::ofstream& myReplace, std::string to_find, std::string replace)
 {
     std::string line;
     std::string tmp;
@@ -40,15 +40,16 @@ int main(int ac, char **av)
     std::ifstream myFile(av[1]);
     std::string filename = av[1];
     std::string addReplace = filename + ".replace";
-
+	
     if (!myFile.is_open())
     {
         std::cout << RED << "Error: \"" << av[1] << "\" is not a valid file" << RESET << std::endl;
         return 1;
     }
 
-    std::ofstream myReplace(addReplace);
-    replace(myFile, myReplace, av[2], av[3]);
+    std::ofstream myReplace(addReplace.c_str());
+
+    replaceFunc(myFile, myReplace, av[2], av[3]);
     myFile.close();
     myReplace.close();
     return 0;
