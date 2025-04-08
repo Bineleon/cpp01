@@ -5,14 +5,14 @@ Weapon::Weapon(std::string const type) : _type(type)
     return;
 }
 
-Weapon::Weapon(const char *type)
-{
-    if (!type)
-        _type = "no weapon";
-    else
-        _type = type;
-    return;
-}
+// Weapon::Weapon(const char *type)
+// {
+//     if (!type)
+//         _type = "no weapon";
+//     else
+//         _type = type;
+//     return;
+// }
 
 Weapon::~Weapon()
 {

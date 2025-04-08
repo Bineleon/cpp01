@@ -32,6 +32,11 @@ int main(int ac, char **av)
         return 1;
     }
 
+    if (!av[1] || !av[2])
+    {
+        std::cout << RED << "Error: <filename> and <string_to_replace> cannot be empty" << RESET << std::endl;
+        return 1;
+    }
     std::ifstream myFile(av[1]);
     std::string filename = av[1];
     std::string addReplace = filename + ".replace";
